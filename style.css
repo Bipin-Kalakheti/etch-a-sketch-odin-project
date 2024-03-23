@@ -1,62 +1,112 @@
-body {
+* {
+  box-sizing: content-box;
   margin: 0;
+  padding: 0;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  width: 100%;
+  height: 400px;
 }
 
-.main-container {
+
+div.grid {
+  background-color: white;
+}
+
+div.full-grid-container {
+  border: 1px solid black;
+  background-color: black;
+  height: 480px;
+  flex-grow: 0;
+}
+
+div.row-container {
+  display: flex;
+}
+
+body {
+  height: 90vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
+  background-color: rgb(245, 237, 237);
+  gap: 5vh;
 }
 
-.header {
+.content {
+  width: 100vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 20px;
+}
+
+.buttons {
+  gap: 20px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: gray;
+  justify-content: flex-end;
+}
+
+.empty span {
+  color: #fff;
+}
+
+.empty {
+  width: 185px;
+}
+
+.tools {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100px;
-  background-color: rgb(129, 23, 23);
-  color: white;
+  gap: 20px;
 }
 
-.main-content {
+.individual-tool {
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colors {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 80%;
-  height: 100%;
-  background-color: rgb(212, 191, 191);
-  color: white;
+  padding: 8px;
 }
 
-.controls {
+.individual-color {
+  display: flex;
+  justify-content: space-between;
+}
+
+.opacity-div {
+  padding: 0px 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100px;
-  background-color: rgb(212, 191, 191);
-  color: white;
 }
 
-.sketch-board {
+li {
+  list-style: none;
+}
+
+.keyboard-shortcuts {
+  padding: 0 10px;
+}
+
+ul {
+  margin-top: 4px;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(212, 191, 191);
-  color: white;
+  flex-direction: column;
+  gap: 4px;
 }
 
-.sketch-box{
-    width:10px;
-    height:10px;
-    border: 1px solid black;
+button {
+  margin: 0 30px;
 }
